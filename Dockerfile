@@ -7,9 +7,6 @@ RUN apk add --no-cache --virtual .build-deps \
     libtool \
     libxml2-dev \
     postgresql-dev \
-    libpng-dev \
-    libjpeg-turbo \
-    libjpeg-turbo-dev 
 
 # Install production dependencies
 RUN apk add --no-cache \
@@ -20,6 +17,7 @@ RUN apk add --no-cache \
     git \
     libc-dev \
     libpng-dev \
+    libjpeg-dev \
     make \
     nodejs \
     nodejs-npm \
