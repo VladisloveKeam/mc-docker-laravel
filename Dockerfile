@@ -17,7 +17,7 @@ RUN apk add --no-cache \
     git \
     libc-dev \
     libpng-dev \
-    libjpeg-dev \
+    libjpeg-turbo-dev \
     libzip-dev \
     make \
     nodejs \
