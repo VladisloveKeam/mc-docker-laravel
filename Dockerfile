@@ -29,6 +29,13 @@ RUN apk add --no-cache \
 
 # Install and enable php extensions
 RUN docker-php-ext-configure zip --with-libzip
+
+RUN docker-php-ext-configure gd \
+  --with-gd \
+  --with-jpeg-dir \
+  --with-png-dir \
+  --with-zlib-dir
+  
 RUN docker-php-ext-install \
     calendar \
     curl \
