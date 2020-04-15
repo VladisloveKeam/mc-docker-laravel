@@ -6,7 +6,10 @@ RUN apk add --no-cache --virtual .build-deps \
     curl-dev \
     libtool \
     libxml2-dev \
-    postgresql-dev
+    postgresql-dev \
+    libpng-dev \
+    libjpeg-turbo \
+    libjpeg-turbo-dev 
 
 # Install production dependencies
 RUN apk add --no-cache \
