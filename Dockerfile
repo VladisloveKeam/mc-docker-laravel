@@ -6,7 +6,7 @@ RUN apk add --no-cache --virtual .build-deps \
     curl-dev \
     libtool \
     libxml2-dev \
-    postgresql-dev \
+    postgresql-dev 
 
 # Install production dependencies
 RUN apk add --no-cache \
@@ -18,6 +18,7 @@ RUN apk add --no-cache \
     libc-dev \
     libpng-dev \
     libjpeg-dev \
+    libzip-dev \
     make \
     nodejs \
     nodejs-npm \
@@ -25,8 +26,7 @@ RUN apk add --no-cache \
     openssh-client \
     postgresql-libs \
     rsync \
-    zlib-dev \
-    libzip-dev
+    zlib-dev
 
 # Install and enable php extensions
 RUN docker-php-ext-configure zip --with-libzip
