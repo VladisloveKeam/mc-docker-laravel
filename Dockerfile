@@ -26,7 +26,8 @@ RUN apk add --no-cache \
     openssh-client \
     postgresql-libs \
     rsync \
-    zlib-dev
+    zlib-dev \
+    ffmpeg
 
 # Install and enable php extensions
 RUN docker-php-ext-configure zip --with-libzip
