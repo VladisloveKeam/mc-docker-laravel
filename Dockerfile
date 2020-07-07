@@ -19,10 +19,10 @@ RUN apk add --no-cache \
     libpng-dev \
     libjpeg-turbo-dev \
     libzip-dev \
-    make \
-    nodejs \
-    nodejs-npm \
-    yarn \
+#    make \
+#    nodejs \
+#    nodejs-npm \
+#    yarn \
     openssh-client \
     postgresql-libs \
     rsync \
